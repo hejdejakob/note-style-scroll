@@ -1,10 +1,8 @@
 import { ChevronLeft } from "lucide-react";
-import { StatusBar } from "@/components/StatusBar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-apple-bg">
-      <StatusBar />
       <header className="border-b border-gray-200">
         <div className="flex items-center px-4 py-2">
           <div className="flex items-center text-apple-link">
