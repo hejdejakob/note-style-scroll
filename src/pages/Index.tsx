@@ -4,10 +4,25 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-apple-bg">
       <header className="border-b border-gray-200">
-        <div className="flex items-center px-4 py-2">
-          <div className="flex items-center text-apple-link">
-            <ChevronLeft className="w-5 h-5" />
-            <span className="underline">All iCloud</span>
+        <div className="flex flex-col">
+          <div className="flex items-center justify-between px-4 py-2">
+            <div className="flex items-center text-apple-link">
+              <ChevronLeft className="w-5 h-5" />
+              <span className="underline">All iCloud</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <button className="text-apple-link">
+                Done
+              </button>
+            </div>
+          </div>
+          <div className="flex items-center justify-between px-4 py-2">
+            <div className="text-apple-gray text-sm">
+              Today at {new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}
+            </div>
+            <div className="text-apple-gray text-sm">
+              0 Characters
+            </div>
           </div>
         </div>
       </header>
